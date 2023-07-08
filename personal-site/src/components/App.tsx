@@ -1,13 +1,16 @@
 import { useState } from 'react'
+import Header from './header'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="flex justify-center">Hello World</div>
+    <div className="p-2">
+      <Header></Header>
+      <div className="flex justify-center">Hello World</div>
+    </div>
   )
 }
 
