@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-leftImprov {
+    0% {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes extendline {
+    0% {
+        position: relative;
+        width: 0%;
+        left: 50%;
+    }
+    100% {
+        position: relative;
+        width: 100%;
+        left: 0%;
+    }
+}
+
+@keyframes extendlineReverse {
+    0% {
+        position: relative;
+        width: 0%;
+    }
+    100% {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@keyframes extendlineRight {
+    0% {
+        position: absolute;
+        right: 100%;
+        width: 0%;
+    }
+    100% {
+        position: absolute;
+        width: 100%;
+        right: 0%;
+    }
+}
+
+.animate-extendlineRight{
+    animation: extendlineReverse 1000ms  100ms  forwards;
+}
+
+.animate-extendlineReverse{
+    animation: extendlineReverse 1000ms  100ms  forwards;
+}
+
+.animate-pulse{
+    animation: extendline 1s both;
+    animation-fill-mode: forwards;
+    animation-duration: 1000ms;
+    animation-delay: 100ms;
+}
+
+.animate-fade-leftImprov {
+    animation: fade-leftImprov 1s both;
+    animation-delay: 300ms;
+    animation-duration: 1000ms;
+
+}
