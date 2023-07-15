@@ -76,7 +76,7 @@ function App() {
               </AnimationOnScroll>
               
             </div>
-            <div className="min-w-[60%] p-1 bg-slate-200">
+            <div className="min-w-[60%] px-1 bg-slate-200">
               <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={600}>
                 <video src={storeFrontVideo} autoPlay loop muted aria-label='video display of storeFront'></video>
               </AnimationOnScroll>
