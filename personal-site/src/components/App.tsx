@@ -17,7 +17,7 @@ function App() {
 
       <div className="flex min-h-[70vh] lg:min-h-[93vh] flex-col justify-start text-3xl md:flex-row xl:text-6xl lg:text-5xl p-6 font-bold gap-1">
 
-        <div className="flex pt-20 md:pt-0 md:items-center md:justify-center flex-col min-w-[50%] gap-1">
+        <div className="flex pt-24 md:pt-0 md:items-center md:justify-center flex-col min-w-[50%] gap-1">
           <div>
             Hey, I'm
             <AnimationOnScroll animateIn="animate-fade-down" animatePreScroll={false}>Ghufran Shahid.</AnimationOnScroll>
