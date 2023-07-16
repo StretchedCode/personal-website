@@ -1,6 +1,7 @@
 import Header from './header'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import storeFrontVideo from '../assets/storeFrontTrim720.mp4'
+import waterlooImg from "../assets/WATERLOO-FI-1568x1044.png"
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
 
       {/*/Introductory Divs*/}
 
-      <div className="flex min-h-[70vh] lg:min-h-[93vh] flex-col justify-start text-3xl md:flex-row xl:text-6xl lg:text-5xl p-6 font-bold gap-1">
+      <div className="flex min-h-[93vh] lg:min-h-[70vh] flex-col justify-start text-3xl md:flex-row xl:text-6xl lg:text-5xl p-6 font-bold gap-1">
 
         <div className="flex pt-24 md:pt-0 md:items-center md:justify-center flex-col min-w-[50%] gap-1">
           <div>
@@ -28,10 +29,31 @@ function App() {
         </div>
       </div>
 
-      <div className="min-h-[30vh] pt-24">
-        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={50} offset={50} className="min-h-[10vh] bg-slate-900 text-white"></AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={150} offset={50} className="min-h-[10vh] bg-slate-800 text-white"></AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={250} offset={50} className="min-h-[10vh] bg-slate-700 text-white"></AnimationOnScroll>
+      <div className="min-h-[30vh] pt-12">
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={50} offset={50} className="min-h-[10vh] bg-slate-50 text-white"></AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={150} offset={50} className="min-h-[10vh] bg-slate-100 text-white"></AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={250} offset={50} className="min-h-[10vh] bg-slate-200 text-white"></AnimationOnScroll>
+      </div>
+
+      <div className="flex flex-col justify-center items-center bg-slate-300">
+        <div className="font-semibold md:text-3xl py-6">
+          Humble Beginnings
+        </div>  
+
+        <div className="flex flex-col min-h-[40vh] lg:flex-row md:text-lg bg-gradient-to-b from-slate-300 via-slate-100 to-slate-300 gap-2">
+          <div>
+            <img className="object-fill min-h-full" src={waterlooImg}></img>
+          </div>
+          <div className="p-4 self-center border-l-2 border-l-slate-700 text-xl leading-8">
+            Currently studying Mathematics at the University of Waterloo, I wish to pursue a career in software development. I find that the vast applications of programming is extremely interesting, and I hope to experience all of the various fields in software.
+          </div>
+        </div>
+      </div>
+
+      <div className="min-h-[30vh] pb-20">
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={50} offset={50} className="min-h-[10vh] bg-slate-300 text-white"></AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={150} offset={50} className="min-h-[10vh] bg-slate-200 text-white"></AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={250} offset={50} className="min-h-[10vh] bg-slate-100 text-white"></AnimationOnScroll>
       </div>
 
       <div className="min-h-[20vh] pt-4 lg:min-h-[30vh] bg-gradient-to-b from-white to-slate-200 flex justify-center  text-xl lg:text-3xl font-bold">
