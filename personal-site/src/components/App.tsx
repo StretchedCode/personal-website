@@ -27,8 +27,14 @@ function App() {
           <AnimationOnScroll animateIn="animate-fade-down" animatePreScroll={false} delay={600}>Welcome to my website.</AnimationOnScroll>
         </div>
       </div>
-      
-      <div className="min-h-[20vh] lg:min-h-[30vh] bg-gradient-to-b from-white to-slate-200 flex justify-center  text-xl lg:text-3xl font-bold">
+
+      <div className="min-h-[30vh] pt-24">
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={50} offset={50} className="min-h-[10vh] bg-slate-900 text-white"></AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={150} offset={50} className="min-h-[10vh] bg-slate-800 text-white"></AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate-fade-leftImprov" delay={250} offset={50} className="min-h-[10vh] bg-slate-700 text-white"></AnimationOnScroll>
+      </div>
+
+      <div className="min-h-[20vh] pt-4 lg:min-h-[30vh] bg-gradient-to-b from-white to-slate-200 flex justify-center  text-xl lg:text-3xl font-bold">
           <div className="bruh">
             <div>
               Some applications I've created.
